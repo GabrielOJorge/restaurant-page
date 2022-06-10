@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/main-footer/main-footer.js":
+/*!***************************************************!*\
+  !*** ./src/components/main-footer/main-footer.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst footerComponent = () => {\n  const footer = document.createElement('footer');\n  const a = document.createElement('a');\n  const i = document.createElement('i');\n  const h3 = document.createElement('h3');\n\n  i.className = 'fab fa-github';\n\n  a.href = 'https://github.com/GabrielOJorge';\n  a.target = '_blank';\n  a.append(i);\n\n  h3.textContent = '© Gabriel O. Jorge';\n\n  footer.append(a, h3);\n\n  return footer;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/main-footer/main-footer.js?");
+
+/***/ }),
+
 /***/ "./src/components/main-header/main-header.js":
 /*!***************************************************!*\
   !*** ./src/components/main-header/main-header.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-header/main-header */ \"./src/components/main-header/main-header.js\");\n/* harmony import */ var _components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main-banner/main-banner */ \"./src/components/main-banner/main-banner.js\");\n\n\n\nconst loadPage = () => {\n  document.getElementById('content').append((0,_components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), (0,_components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/functions/load-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-header/main-header */ \"./src/components/main-header/main-header.js\");\n/* harmony import */ var _components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main-banner/main-banner */ \"./src/components/main-banner/main-banner.js\");\n/* harmony import */ var _components_main_footer_main_footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/main-footer/main-footer */ \"./src/components/main-footer/main-footer.js\");\n\n\n\n\nconst loadPage = () => {\n  document.getElementById('content').append((0,_components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), (0,_components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(), (0,_components_main_footer_main_footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/functions/load-page.js?");
 
 /***/ }),
 
