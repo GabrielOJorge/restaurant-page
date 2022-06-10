@@ -1,7 +1,10 @@
 const headerComponent = () => {
   const header = document.createElement('header');
   const h1 = document.createElement('h1');
-  const div = document.createElement('div');
+  const ul = document.createElement('ul');
+  const li1 = document.createElement('li');
+  const li2 = document.createElement('li');
+  const li3 = document.createElement('li');
   const a1 = document.createElement('a');
   const a2 = document.createElement('a');
   const a3 = document.createElement('a');
@@ -18,8 +21,12 @@ const headerComponent = () => {
   a2.href = '#menu';
   a3.href = '#contact';
 
-  div.append(a1, a2, a3);
-  header.append(h1, div);
+  li1.append(a1);
+  li2.append(a2);
+  li3.append(a3);
+
+  ul.append(li1, li2, li3);
+  header.append(h1, ul);
 
   return header;
 };
