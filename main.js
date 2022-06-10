@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/header/header.js":
-/*!*****************************************!*\
-  !*** ./src/components/header/header.js ***!
-  \*****************************************/
+/***/ "./src/components/main-banner/main-banner.js":
+/*!***************************************************!*\
+  !*** ./src/components/main-banner/main-banner.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst headerComponent = () => {\n  const header = document.createElement('header');\n  const h1 = document.createElement('h1');\n  const div = document.createElement('div');\n  const a1 = document.createElement('a');\n  const a2 = document.createElement('a');\n  const a3 = document.createElement('a');\n\n  header.classList.add('main-header');\n\n  h1.textContent = 'Restaurant';\n\n  a1.textContent = 'Home';\n  a2.textContent = 'Menu';\n  a3.textContent = 'Contact';\n\n  a1.href = '#home';\n  a2.href = '#menu';\n  a3.href = '#contact';\n\n  div.append(a1, a2, a3);\n  header.append(h1, div);\n\n  return header;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/header/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst bannerComponent = () => {\n  const banner = document.createElement('main');\n  const para = document.createElement('p');\n  const a = document.createElement('a');\n\n  para.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi alias at dolor illo sapiente.';\n  a.textContent = 'See the menu';\n  a.href = '#menu'\n\n  banner.append(para, a);\n\n  return banner;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (bannerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/main-banner/main-banner.js?");
+
+/***/ }),
+
+/***/ "./src/components/main-header/main-header.js":
+/*!***************************************************!*\
+  !*** ./src/components/main-header/main-header.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst headerComponent = () => {\n  const header = document.createElement('header');\n  const h1 = document.createElement('h1');\n  const ul = document.createElement('ul');\n  const li1 = document.createElement('li');\n  const li2 = document.createElement('li');\n  const li3 = document.createElement('li');\n  const a1 = document.createElement('a');\n  const a2 = document.createElement('a');\n  const a3 = document.createElement('a');\n\n  header.classList.add('main-header');\n\n  h1.textContent = 'Restaurant';\n\n  a1.textContent = 'Home';\n  a2.textContent = 'Menu';\n  a3.textContent = 'Contact';\n\n  a1.href = '#home';\n  a2.href = '#menu';\n  a3.href = '#contact';\n\n  li1.append(a1);\n  li2.append(a2);\n  li3.append(a3);\n\n  ul.append(li1, li2, li3);\n  header.append(h1, ul);\n\n  return header;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (headerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/main-header/main-header.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/header/header */ \"./src/components/header/header.js\");\n\n\nconst loadPage = () => {\n  document.getElementById('content').append((0,_components_header_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/functions/load-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-header/main-header */ \"./src/components/main-header/main-header.js\");\n/* harmony import */ var _components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/main-banner/main-banner */ \"./src/components/main-banner/main-banner.js\");\n\n\n\nconst loadPage = () => {\n  document.getElementById('content').append((0,_components_main_header_main_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), (0,_components_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/functions/load-page.js?");
 
 /***/ }),
 
