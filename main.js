@@ -16,7 +16,7 @@
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst bannerComponent = () => {\n  const banner = document.createElement('main');\n  const para = document.createElement('p');\n  const a = document.createElement('a');\n\n  para.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi alias at dolor illo sapiente.';\n  a.textContent = 'See the menu';\n  a.href = '#menu'\n\n  banner.append(para, a);\n\n  return banner;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (bannerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/main-banner/main-banner.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst bannerComponent = () => {\n  const banner = document.createElement('main');\n  const para = document.createElement('p');\n  const a = document.createElement('a');\n\n  para.textContent = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi alias at dolor illo sapiente.';\n  a.textContent = 'See the menu';\n  a.href = '#menu'\n  banner.classList.add('main-banner');\n\n  banner.append(para, a);\n\n  return banner;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (bannerComponent);\n\n//# sourceURL=webpack://restaurant-page/./src/components/main-banner/main-banner.js?");
 
 /***/ }),
 
