@@ -1,0 +1,43 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-top: 2rem;
+}
+
+.main-header h1 {
+  font-size: clamp(3rem, 4rem, 4vw);
+}
+
+.main-header ul {
+  display: flex;
+  gap: 1.5rem;
+  font-size: clamp(1.8rem, 2rem, 2vw);
+}
+
+.main-header a {
+  position: relative;
+}
+
+.main-header a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: 1px;
+  transition: .3s;
+}
+
+.main-header a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .main-header {
+    justify-content: space-between;
+  }
+}
