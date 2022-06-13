@@ -12,6 +12,7 @@ const footerComponent = () => {
 
   h3.textContent = '© Gabriel O. Jorge';
 
+  footer.classList.add('main-footer');
   footer.append(a, h3);
 
   return footer;
