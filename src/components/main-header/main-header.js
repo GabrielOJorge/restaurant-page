@@ -1,6 +1,7 @@
 const headerComponent = () => {
   const header = document.createElement('header');
   const h1 = document.createElement('h1');
+  const nav = document.createElement('nav');
   const ul = document.createElement('ul');
   const li1 = document.createElement('li');
   const li2 = document.createElement('li');
@@ -26,7 +27,8 @@ const headerComponent = () => {
   li3.append(a3);
 
   ul.append(li1, li2, li3);
-  header.append(h1, ul);
+  nav.append(ul);
+  header.append(h1, nav);
 
   return header;
 };
