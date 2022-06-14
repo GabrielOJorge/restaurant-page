@@ -12,7 +12,7 @@ const headerComponent = () => {
 
   header.classList.add('main-header');
 
-  h1.textContent = 'Restaurant';
+  h1.textContent = 'Saint Louis';
 
   a1.textContent = 'Home';
   a2.textContent = 'Menu';
