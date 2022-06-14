@@ -4,7 +4,7 @@ const bannerComponent = () => {
   const para2 = document.createElement('p');
   const a = document.createElement('a');
   
-  para1.textContent = '123, Fake Street | Seattle, WA | 206-555-7890';
+  para1.textContent = '123, Fake Street | Lyon, FR | 206-555-7890';
   para2.textContent = 'Un bon repas doit commencer par la faim';
 
   a.textContent = 'See the menu';
