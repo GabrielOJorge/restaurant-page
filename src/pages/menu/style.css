@@ -1,0 +1,39 @@
+#menu {
+  max-width: min(100%, 1100px);
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  transform: scale(0);
+  transition: all .2s ease-out;
+}
+
+#menu h2 {
+  font-size: clamp(3rem, 3.6rem, 3vw);
+  font-style: italic;
+}
+
+#menu h3 {
+  font-size: clamp(2rem, 2.4rem, 4vw);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+#menu p {
+  font-size: clamp(1.4rem, 1.8rem, 2vw);
+}
+
+.cafe-section h2 {
+  margin-bottom: 4rem;
+}
+
+.cafe-section > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: baseline;
+  text-align: center;
+  gap: 4rem;
+}
