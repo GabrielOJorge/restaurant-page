@@ -4,12 +4,13 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'IM Fell French Canon', serif;
-  background: url(../../../src/assets/images/bg-2.png) no-repeat center #000;
+  background: url(../../../src/assets/images/bg-2.png) no-repeat center fixed #000;
   background-size: cover;
   color: #fff;
 }
 
 body > div {
+  display: relative;
   display: grid;
   grid-template-rows: 1fr 10fr 1fr;
   height: 100vh;

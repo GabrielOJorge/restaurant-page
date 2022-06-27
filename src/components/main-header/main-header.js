@@ -1,5 +1,6 @@
 import displayMenu from '../../functions/display-menu';
 import displayHome from '../../functions/display-home';
+import displayContact from '../../functions/display-contact';
 
 const headerComponent = () => {
   const header = document.createElement('header');
@@ -27,6 +28,7 @@ const headerComponent = () => {
 
   a1.addEventListener('click', displayHome);
   a2.addEventListener('click', displayMenu);
+  a3.addEventListener('click', displayContact);
 
   li1.append(a1);
   li2.append(a2);
